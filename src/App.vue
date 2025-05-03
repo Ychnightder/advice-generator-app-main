@@ -20,8 +20,8 @@ const getAdvice = async () => {
 const updateImage = () => {
 	const isMobile = window.innerWidth < 768;
 	img.value = isMobile 
-	? '../public/assets/images/pattern-divider-mobile.svg' 
-	: '../public/assets/images/pattern-divider-desktop.svg';
+	? './assets/images/pattern-divider-mobile.svg' 
+	: './assets/images/pattern-divider-desktop.svg';
 };
 onMounted(() => {
 	updateImage(); // Initialisation de l'image
